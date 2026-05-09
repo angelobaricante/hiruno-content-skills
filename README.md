@@ -99,7 +99,7 @@ The repo is private, so the CLI uses your local `gh auth` credentials when fetch
 If you prefer the namespaced Claude Code plugin install (skills appear as `hiruno-content-skills:hook-generator`, etc):
 
 ```
-/plugin marketplace add github:angelobaricante/hiruno-content-skills
+/plugin marketplace add angelobaricante/hiruno-content-skills
 /plugin install hiruno-content-skills
 ```
 

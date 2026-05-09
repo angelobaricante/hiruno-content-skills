@@ -46,7 +46,7 @@ npx skills add angelobaricante/hiruno-content-skills -a claude-code
 Plugin marketplace alternative (namespaced under `hiruno-content-skills:`):
 
 ```
-/plugin marketplace add github:angelobaricante/hiruno-content-skills
+/plugin marketplace add angelobaricante/hiruno-content-skills
 /plugin install hiruno-content-skills
 ```
 
