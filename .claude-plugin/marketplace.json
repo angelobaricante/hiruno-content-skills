@@ -2,7 +2,7 @@
   "version": "1.0",
   "plugins": [
     {
-      "name": "hiruno-v2",
+      "name": "hiruno-content-skills",
       "description": "Hiruno V2 content strategist agent. Twelve skills built on Jun Yuh's 1x5x3 system: foundation, strategy, messaging, hooks, formats, multiplication, and audit.",
       "source": {
         "source": "github",

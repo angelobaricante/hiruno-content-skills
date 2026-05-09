@@ -73,14 +73,14 @@ In Claude Code, run:
 
 ```
 /plugin marketplace add github:angelobaricante/hiruno-content-skills
-/plugin install hiruno-v2
+/plugin install hiruno-content-skills
 ```
 
-All twelve skills get installed under the `hiruno-v2:` namespace — `hiruno-v2:hook-generator`, `hiruno-v2:posting-grid`, etc — exactly like the official `marketing-skills:` and `expo-app-design:` bundles.
+All twelve skills get installed under the `hiruno-content-skills:` namespace — `hiruno-content-skills:hook-generator`, `hiruno-content-skills:posting-grid`, etc — exactly like the official `marketing-skills:` and `expo-app-design:` bundles.
 
 The `.agents/brand-content-context.md` file still lives per-project, so each brand gets its own context. Skills auto-inject it at runtime via the `` !`shell` `` syntax in each `SKILL.md`.
 
-To update later, re-run `/plugin marketplace add` (it re-fetches) or use `/plugin update hiruno-v2`. To uninstall, `/plugin uninstall hiruno-v2`.
+To update later, re-run `/plugin marketplace add` (it re-fetches) or use `/plugin update hiruno-content-skills`. To uninstall, `/plugin uninstall hiruno-content-skills`.
 
 The repo is private, so Claude Code uses your local `gh auth` credentials when fetching it.
 
@@ -100,8 +100,8 @@ For each brand or project, clone this repo into the project's `.agents/skills/` 
 
 ```bash
 mkdir -p .agents
-git clone git@github.com:[your-org]/hiruno-v2.git .agents/hiruno-v2
-ln -s .agents/hiruno-v2/skills .agents/skills
+git clone git@github.com:angelobaricante/hiruno-content-skills.git .agents/hiruno-content-skills
+ln -s .agents/hiruno-content-skills/skills .agents/skills
 ```
 
 Then in the project, run the agent and start with the brand-content-context skill to create `.agents/brand-content-context.md` for that specific brand.
@@ -111,11 +111,11 @@ Then in the project, run the agent and start with the brand-content-context skil
 If you want the raw skills available across all projects without the plugin namespace:
 
 ```bash
-git clone git@github.com:angelobaricante/hiruno-content-skills.git ~/.claude/hiruno-v2
-ln -s ~/.claude/hiruno-v2/skills/* ~/.claude/skills/
+git clone git@github.com:angelobaricante/hiruno-content-skills.git ~/.claude/hiruno-content-skills
+ln -s ~/.claude/hiruno-content-skills/skills/* ~/.claude/skills/
 ```
 
-Note this drops them into `~/.claude/skills/` flat — you lose the `hiruno-v2:` namespace. Prefer Option 1.
+Note this drops them into `~/.claude/skills/` flat — you lose the `hiruno-content-skills:` namespace. Prefer Option 1.
 
 ## Usage
 

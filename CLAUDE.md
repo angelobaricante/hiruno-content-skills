@@ -95,10 +95,10 @@ The repo includes a `.claude-plugin/marketplace.json` so it can be installed via
 
 ```
 /plugin marketplace add github:angelobaricante/hiruno-content-skills
-/plugin install hiruno-v2
+/plugin install hiruno-content-skills
 ```
 
-Skills install under the `hiruno-v2:` namespace (e.g. `hiruno-v2:hook-generator`). Private-repo auth is handled by your local `gh` CLI credentials.
+Skills install under the `hiruno-content-skills:` namespace (e.g. `hiruno-content-skills:hook-generator`). Private-repo auth is handled by your local `gh` CLI credentials.
 
 ## Brand context locations
 
@@ -131,7 +131,7 @@ The skills (whether installed globally at `~/.claude/skills/` or per-project at 
 When the source repo updates:
 
 ```bash
-cd ~/path/to/hiruno-v2
+cd ~/path/to/hiruno-content-skills
 git pull
 bash tools/build-claude-overrides.sh   # if using the wrapper
 ```
