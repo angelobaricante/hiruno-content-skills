@@ -1,6 +1,6 @@
 # The 1×5×3 Content System
 
-The complete system Hiruno V2 implements. All skills in this repo reference this doc as the single source of truth.
+The complete system Hiruno Content Skills implements. All skills in this repo reference this doc as the single source of truth.
 
 ## The core equation
 

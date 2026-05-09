@@ -1,4 +1,4 @@
-# Contributing to Hiruno V2
+# Contributing to Hiruno Content Skills
 
 This is a private repo. "Contributing" here means: how to add or modify skills internally as Hiruno's content system evolves.
 

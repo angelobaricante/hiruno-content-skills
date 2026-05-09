@@ -1,4 +1,4 @@
-# Hiruno V2 — Content Strategist Agent
+# Hiruno Content Skills — Content Strategist Agent
 
 A private collection of AI agent skills built on Jun Yuh's 1×5×3 content system. Designed for Hiruno's solo-operator workflow and used across DTC clients (Cult of Sauna, Volt Dropper, future) and personal-brand work.
 
@@ -65,34 +65,45 @@ Skills cross-reference each other. See each skill's "Related skills" section.
 
 ## Installation
 
-This is a private repo. Recommended path is the Claude Code plugin install. Two manual fallbacks below for non–Claude Code agents or air-gapped setups.
+This is a private repo. Recommended path is the `npx skills` CLI — it works across Claude Code, Cursor, Codex, OpenCode, and 50+ other agents that follow the [Agent Skills spec](https://agentskills.io). Three fallbacks below.
 
-### Option 1: install as a Claude Code plugin (recommended)
+### Option 1: install via `npx skills` (recommended)
 
-In Claude Code, run:
+Use the [open agent skills CLI](https://github.com/vercel-labs/skills) to install directly from this repo:
+
+```bash
+# Install all skills (project-local: ./.claude/skills, ./.cursor/skills, etc.)
+npx skills add angelobaricante/hiruno-content-skills
+
+# Install globally (~/.claude/skills, ~/.cursor/skills, etc.)
+npx skills add angelobaricante/hiruno-content-skills -g
+
+# Install specific skills only
+npx skills add angelobaricante/hiruno-content-skills --skill hook-generator --skill posting-grid
+
+# List skills available in this repo without installing
+npx skills add angelobaricante/hiruno-content-skills --list
+
+# Target a specific agent (claude-code, cursor, codex, opencode, ...)
+npx skills add angelobaricante/hiruno-content-skills -a claude-code
+```
+
+Each `SKILL.md` already has the brand-context auto-inject line pre-baked — at runtime it shells out to `cat .agents/brand-content-context.md` from the current working directory, so per-project brand contexts work automatically.
+
+To update later: `npx skills update`. To remove: `npx skills remove`. See `npx skills --help` for the full command set.
+
+The repo is private, so the CLI uses your local `gh auth` credentials when fetching it.
+
+### Option 2: install as a Claude Code plugin
+
+If you prefer the namespaced Claude Code plugin install (skills appear as `hiruno-content-skills:hook-generator`, etc):
 
 ```
 /plugin marketplace add github:angelobaricante/hiruno-content-skills
 /plugin install hiruno-content-skills
 ```
 
-All twelve skills get installed under the `hiruno-content-skills:` namespace — `hiruno-content-skills:hook-generator`, `hiruno-content-skills:posting-grid`, etc — exactly like the official `marketing-skills:` and `expo-app-design:` bundles.
-
-The `.agents/brand-content-context.md` file still lives per-project, so each brand gets its own context. Skills auto-inject it at runtime via the `` !`shell` `` syntax in each `SKILL.md`.
-
-To update later, re-run `/plugin marketplace add` (it re-fetches) or use `/plugin update hiruno-content-skills`. To uninstall, `/plugin uninstall hiruno-content-skills`.
-
-The repo is private, so Claude Code uses your local `gh auth` credentials when fetching it.
-
-### Option 2: flat install via npx (for non-plugin setups)
-
-Installs all skills directly into `~/.claude/skills/` (flat, unnamespaced) with the brand-context auto-inject pre-baked.
-
-```bash
-npx github:angelobaricante/hiruno-content-skills
-```
-
-Use this only if you can't use the plugin install (e.g. running skills in a non–Claude Code agent that reads from `~/.claude/skills/` directly).
+To update later, re-run `/plugin marketplace add` or use `/plugin update hiruno-content-skills`. To uninstall, `/plugin uninstall hiruno-content-skills`.
 
 ### Option 3: per-project clone
 
@@ -106,16 +117,14 @@ ln -s .agents/hiruno-content-skills/skills .agents/skills
 
 Then in the project, run the agent and start with the brand-content-context skill to create `.agents/brand-content-context.md` for that specific brand.
 
-### Option 4: global symlink (manual, non-plugin)
+### Option 4: global symlink (manual)
 
-If you want the raw skills available across all projects without the plugin namespace:
+If you want the raw skills available across all projects without going through any CLI:
 
 ```bash
 git clone git@github.com:angelobaricante/hiruno-content-skills.git ~/.claude/hiruno-content-skills
 ln -s ~/.claude/hiruno-content-skills/skills/* ~/.claude/skills/
 ```
-
-Note this drops them into `~/.claude/skills/` flat — you lose the `hiruno-content-skills:` namespace. Prefer Option 1.
 
 ## Usage
 

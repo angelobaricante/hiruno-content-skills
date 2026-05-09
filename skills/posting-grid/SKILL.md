@@ -3,6 +3,8 @@ name: posting-grid
 description: Use this skill whenever the user wants to plan, build, or organise a content calendar, posting schedule, or content grid for a brand. Trigger on phrases like "build a content calendar", "30 day plan", "content grid", "weekly posting schedule", "what should I post when", "give me a month of content", "plan my next 30 posts", "calendar for [client]", "lay out a schedule", or whenever the user is moving from individual post ideas to systematic planning. This skill applies the 1×5×3 math: one topic × 5 hooks × 3 formats = 15 posts. One topic gets you ~3 weeks at 5x/week. Two topics gets you daily for a month. Output is a slot-filled calendar laid across days, ready to hand to a producer or auto-pilot through the format skills.
 ---
 
+Brand context: !`cat .agents/brand-content-context.md 2>/dev/null || echo "No brand context found. Run /brand-content-context first to set up."`
+
 # Posting Grid
 
 You build content calendars using the 1×5×3 math. The whole point is that the user never starts from scratch on any single post — every slot in the grid pulls from a topic plus a hook plus a format that's already been chosen.

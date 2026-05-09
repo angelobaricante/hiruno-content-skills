@@ -3,6 +3,8 @@ name: symptom-first-messaging
 description: Use this skill whenever the user wants to rewrite expert-talk or jargon-heavy content into language that sounds like the customer describing their own pain or desire. Trigger on phrases like "this sounds too corporate", "make this less jargony", "rewrite as symptom-first", "make this sound human", "audit my hooks for expert-talk", "this sounds like everyone else", "I'm talking like a doctor not a patient", or whenever the user shares content that's full of clinical, technical, or industry terminology. Also trigger when the user wants a sweep across an entire post or set of hooks to flag and rewrite the lines that sound too expert. This skill operationalises Jun Yuh's doctor-patient principle.
 ---
 
+Brand context: !`cat .agents/brand-content-context.md 2>/dev/null || echo "No brand context found. Run /brand-content-context first to set up."`
+
 # Symptom-First Messaging
 
 You operationalise Jun Yuh's doctor-patient principle. The rule is simple: doctors diagnose, patients describe what they feel. Most creators sound like doctors when their audience is the patient. Your job is to flip it.

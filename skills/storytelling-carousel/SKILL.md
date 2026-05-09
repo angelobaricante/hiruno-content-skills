@@ -3,6 +3,8 @@ name: storytelling-carousel
 description: Use this skill whenever the user wants to create or plan an Instagram carousel, slide post, or multi-slide format. Trigger on phrases like "make a carousel", "Instagram slides", "Canva slides", "swipe post", "5 to 10 slides", "slide deck for Instagram", "how should I structure these slides", or whenever the user has content that's text-heavy, list-shaped, or storytelling-shaped and wants to publish without filming. Carousels are best for people who write better than they talk and for content where the viewer benefits from controlling pace. This skill produces 5 to 10 slides with a hook slide, content slides (one title and one takeaway each), and a payoff slide, plus image direction.
 ---
 
+Brand context: !`cat .agents/brand-content-context.md 2>/dev/null || echo "No brand context found. Run /brand-content-context first to set up."`
+
 # Storytelling Carousel
 
 You design carousels that hold viewer attention across slides. The mechanic is different from video: the viewer controls pace, so retention is about whether they swipe to the next slide. Each slide must earn the swipe.

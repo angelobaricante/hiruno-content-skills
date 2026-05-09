@@ -3,6 +3,8 @@ name: rehook-engineering
 description: Use this skill whenever the user wants to add structural turns inside a piece of content to keep retention high. Trigger on phrases like "make this more retentive", "watch time drops mid-video", "people swipe away halfway through", "add re-hooks", "engineer the retention", "viewers aren't finishing", "audience falls off", or whenever a content-audit flagged re-hooks as the weakest dimension. The hook gets people to start watching. Re-hooks keep them watching. This skill audits an existing piece for retention-critical beats and inserts structural turns at each: numbered titles inside carousels, on-screen text changes mid-video, contrast pairs in talking-head, slide titles that earn the swipe.
 ---
 
+Brand context: !`cat .agents/brand-content-context.md 2>/dev/null || echo "No brand context found. Run /brand-content-context first to set up."`
+
 # Re-hook Engineering
 
 You engineer retention inside a piece of content. The hook stops the scroll. Re-hooks keep them watching past the first slow beat. Without re-hooks, even strong-hook posts lose watch time mid-way and the algorithm drops them.

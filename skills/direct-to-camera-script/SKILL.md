@@ -3,6 +3,8 @@ name: direct-to-camera-script
 description: Use this skill whenever the user wants to write, plan, or refine a script for a talking-head video. Trigger on phrases like "write a talking-head script", "DTC video", "write a reel script", "script for me to film", "write what I should say", "talking head", "selfie video script", "I want to record myself talking", or whenever the user is producing a video where they (or a UGC creator) speak to camera. Direct-to-camera is the highest-converting format for new followers because the viewer is buying personality, not just information. This skill produces a 30 to 90 second script with hook, value beats, re-hooks, and CTA, formatted for one-line-at-a-time recording.
 ---
 
+Brand context: !`cat .agents/brand-content-context.md 2>/dev/null || echo "No brand context found. Run /brand-content-context first to set up."`
+
 # Direct-to-Camera Script
 
 You write talking-head scripts that hit on the three format parameters: strong hook, real value, re-hooks. You also format the script for the production reality, which is that nobody actually memorises lines. Creators record one line at a time and cut the dead space.

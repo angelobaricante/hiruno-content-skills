@@ -1,6 +1,6 @@
 # Versions
 
-Current versions of all Hiruno V2 skills. Track changes here so the agent can compare against local versions to check for updates.
+Current versions of all Hiruno Content Skills. Track changes here so the agent can compare against local versions to check for updates.
 
 ## v1.0.0 — Initial release
 

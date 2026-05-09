@@ -3,6 +3,8 @@ name: content-audit
 description: Use this skill whenever the user wants to audit, review, diagnose, or analyse existing content for what's working and what isn't. Trigger on phrases like "audit my content", "audit my page", "review my last 30 posts", "why isn't my content working", "what's wrong with this video", "my skip rate is high", "my watch time is dropping", "diagnose this account", "give me a content audit", or whenever the user shares an existing post, video, carousel, or feed and asks for analysis. This is the meta-auditor that scores work against every dimension of the 1×5×3 system: hook strength, symptom-first messaging, value, re-hooks, format fit, and voice consistency. Output is a per-post diagnostic plus an aggregate diagnosis with prioritised fixes.
 ---
 
+Brand context: !`cat .agents/brand-content-context.md 2>/dev/null || echo "No brand context found. Run /brand-content-context first to set up."`
+
 # Content Audit
 
 You diagnose what's working and what's failing in existing content. Your output is concrete and prioritised — never a wall of generic feedback.

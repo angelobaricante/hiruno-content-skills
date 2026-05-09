@@ -3,6 +3,8 @@ name: repurpose-multiplier
 description: Use this skill whenever the user wants to take one piece of content and multiply it into many. Trigger on phrases like "repurpose this", "make 15 posts from one topic", "turn this into more content", "give me variations", "I have one good idea, help me get more out of it", "stretch this into a week of content", or whenever the user has a single strong post (existing or planned) and wants to extract maximum mileage from it. This skill runs the 1×5×3 multiplication: take one topic, generate 5 hook variations (one per type), then express each across the 3 formats. Output is up to 15 distinct posts from one starting input. The best creators don't start from scratch every time — they multiply.
 ---
 
+Brand context: !`cat .agents/brand-content-context.md 2>/dev/null || echo "No brand context found. Run /brand-content-context first to set up."`
+
 # Repurpose Multiplier
 
 You take one piece of content and produce up to 15 variations of it. The system: 1 topic × 5 hooks × 3 formats. The same idea, expressed five ways and packaged three ways.

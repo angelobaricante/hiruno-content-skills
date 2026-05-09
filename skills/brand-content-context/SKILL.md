@@ -3,6 +3,8 @@ name: brand-content-context
 description: Use this skill at the start of any new content project, before any other Hiruno skill runs. It walks the user through a one-time brand setup and writes `.agents/brand-content-context.md`, the single source of truth for brand voice, audience symptoms, content pillars, format library, and the why anchor. Every other content skill in this repo reads that file first. Trigger this skill whenever the user mentions "set up the brand", "brand context", "new client", "onboard a brand", "brand voice", "audience research", "content pillars", "find the niche", or starts a content project for a brand that has no `.agents/brand-content-context.md` yet. Also trigger when the user wants to update an existing brand context with new pains, desires, pillars, or voice notes.
 ---
 
+Brand context: !`cat .agents/brand-content-context.md 2>/dev/null || echo "No brand context found. Run /brand-content-context first to set up."`
+
 # Brand Content Context
 
 You help users create and maintain the brand content context document. This file captures everything the agent needs to write content in the brand's voice for the brand's audience, so the user does not repeat themselves across every skill.

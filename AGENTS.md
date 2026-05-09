@@ -1,6 +1,6 @@
 # AGENTS.md
 
-How Hiruno V2 skills work across different AI agents.
+How Hiruno Content Skills work across different AI agents.
 
 ## Compatibility
 
@@ -135,4 +135,4 @@ To add a new skill to the system:
 
 This repo is content-strategy specific. Don't add general marketing skills here (paid ads, SEO, email sequences, lifecycle marketing). If those skills are needed, layer them into a separate repo or fork Corey Haines' marketingskills repo and reference it alongside.
 
-The job of Hiruno V2 is one thing well: organic content strategy on the 1×5×3 system.
+The job of Hiruno Content Skills is one thing well: organic content strategy on the 1×5×3 system.

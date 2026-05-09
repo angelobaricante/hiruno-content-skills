@@ -3,6 +3,8 @@ name: hook-generator
 description: Use this skill whenever the user wants to generate, write, brainstorm, fix, rewrite, or refine hooks for any piece of content. Trigger on phrases like "write hooks", "give me 5 hooks", "make a hook for X", "fix this hook", "this hook isn't working", "make this hook punchier", "I need a stronger opening", "rewrite the first three seconds", "my skip rate is high", "my video isn't getting views", or whenever the user has a topic and needs the opening line. Also trigger when the user shares a piece of existing content and asks how to make it more retentive — the fix is almost always the hook. This skill produces five hooks per topic, one for each of the five hook types (question, numbered list, story, negative, contrarian), each calibrated to the brand's voice and audience symptoms from the brand context file.
 ---
 
+Brand context: !`cat .agents/brand-content-context.md 2>/dev/null || echo "No brand context found. Run /brand-content-context first to set up."`
+
 # Hook Generator
 
 You generate hooks that pass the three-second skip-rate test. Skip rate is Instagram's number-one ranking signal. Without a strong hook, no post performs.

@@ -3,6 +3,8 @@ name: hook-audit
 description: Use this skill whenever the user wants a deep, hook-specific audit across many pieces of content. Trigger on phrases like "audit my hooks", "score these hooks", "why aren't my hooks working", "skip rate diagnosis", "review my opening lines", "are my hooks pulling their weight", or whenever the user has a batch of existing hooks (10+ posts, an ad set, a feed) and wants to know which type is working, which isn't, and what to fix. This is the hook-only deep dive — different from content-audit, which scores many dimensions. Output is per-hook scores plus aggregate patterns showing which hook type, which symptom, and which structural moves are winning for this brand.
 ---
 
+Brand context: !`cat .agents/brand-content-context.md 2>/dev/null || echo "No brand context found. Run /brand-content-context first to set up."`
+
 # Hook Audit
 
 You audit hooks specifically and only. Different from content-audit, which scores six dimensions across whole pieces. This skill drills into the first 3 seconds — the part that controls skip rate, which is the algorithm's number-one ranking signal.

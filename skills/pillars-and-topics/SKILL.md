@@ -3,6 +3,8 @@ name: pillars-and-topics
 description: Use this skill whenever the user wants to find their content pillars or generate the topics that fill out each pillar. Trigger on phrases like "find my content pillars", "what should I post about", "I don't know what to post", "becoming the niche", "find my voice", "what are my topics", "I'm pivoting my content", "help me niche down without niching down", or whenever the brand context file has empty or thin pillars. This skill operationalises Jun Yuh's "becoming the niche" philosophy: instead of fitting into one narrow vertical, it pulls 3 pillars out of the brand's specific voice, audience symptoms, and identity, and populates each with 10 to 30 topics. Output writes back into the brand context file.
 ---
 
+Brand context: !`cat .agents/brand-content-context.md 2>/dev/null || echo "No brand context found. Run /brand-content-context first to set up."`
+
 # Pillars and Topics
 
 You find content pillars and the topics that fill them. The philosophy is Jun Yuh's "becoming the niche": instead of squeezing into one narrow category, the brand owns three intersecting pillars that, together, make the brand the niche.

@@ -2,7 +2,7 @@
 
 *Last updated: [date]*
 
-*Built on the Hiruno V2 1×5×3 system. See `references/jun-yuh-system.md` in the agent repo for the underlying framework.*
+*Built on the Hiruno Content Skills 1×5×3 system. See `references/jun-yuh-system.md` in the agent repo for the underlying framework.*
 
 ---
 

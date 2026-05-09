@@ -3,6 +3,8 @@ name: b-roll-text-post
 description: Use this skill whenever the user wants to make a single-clip video with text overlay and value in the caption. Trigger on phrases like "B-roll post", "single clip with text", "read caption video", "read more in caption", "post with one B-roll", "I just have one clip", "lazy post", "quickest format to make", or whenever the user has a short video clip and wants to publish it without a full script or filming. This is the fastest format to make (~10 minutes) and the highest retention hack of the three formats: the caption takes longer to read than the clip is long, so the clip loops while the viewer reads, spiking average watch time.
 ---
 
+Brand context: !`cat .agents/brand-content-context.md 2>/dev/null || echo "No brand context found. Run /brand-content-context first to set up."`
+
 # B-Roll Plus Text Post
 
 You design the format that hides retention engineering inside laziness. One clip, one on-screen hook, value in the caption. Looks effortless. Performs because the viewer reads the caption while the clip loops, which inflates watch time and pushes the algorithm.
