@@ -94,11 +94,11 @@ Use slash commands when you want to force a specific skill to run rather than le
 The repo includes a `.claude-plugin/marketplace.json` so it can be installed via:
 
 ```
-/plugin marketplace add [path-or-url]/hiruno-v2
+/plugin marketplace add github:angelobaricante/hiruno-content-skills
 /plugin install hiruno-v2
 ```
 
-Since this is a private repo, install via local path or private GitHub URL with appropriate auth.
+Skills install under the `hiruno-v2:` namespace (e.g. `hiruno-v2:hook-generator`). Private-repo auth is handled by your local `gh` CLI credentials.
 
 ## Brand context locations
 

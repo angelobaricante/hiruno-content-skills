@@ -65,25 +65,36 @@ Skills cross-reference each other. See each skill's "Related skills" section.
 
 ## Installation
 
-This is a private repo. Three install patterns to consider.
+This is a private repo. Recommended path is the Claude Code plugin install. Two manual fallbacks below for non–Claude Code agents or air-gapped setups.
 
-### Option 1: one-shot install via npx (recommended for Claude Code)
+### Option 1: install as a Claude Code plugin (recommended)
 
-Installs all skills into `~/.claude/skills/` with the brand-context auto-inject already wired in. Re-run any time to refresh after a `git pull` upstream.
+In Claude Code, run:
+
+```
+/plugin marketplace add github:angelobaricante/hiruno-content-skills
+/plugin install hiruno-v2
+```
+
+All twelve skills get installed under the `hiruno-v2:` namespace — `hiruno-v2:hook-generator`, `hiruno-v2:posting-grid`, etc — exactly like the official `marketing-skills:` and `expo-app-design:` bundles.
+
+The `.agents/brand-content-context.md` file still lives per-project, so each brand gets its own context. Skills auto-inject it at runtime via the `` !`shell` `` syntax in each `SKILL.md`.
+
+To update later, re-run `/plugin marketplace add` (it re-fetches) or use `/plugin update hiruno-v2`. To uninstall, `/plugin uninstall hiruno-v2`.
+
+The repo is private, so Claude Code uses your local `gh auth` credentials when fetching it.
+
+### Option 2: flat install via npx (for non-plugin setups)
+
+Installs all skills directly into `~/.claude/skills/` (flat, unnamespaced) with the brand-context auto-inject pre-baked.
 
 ```bash
 npx github:angelobaricante/hiruno-content-skills
 ```
 
-Custom target dir:
+Use this only if you can't use the plugin install (e.g. running skills in a non–Claude Code agent that reads from `~/.claude/skills/` directly).
 
-```bash
-npx github:angelobaricante/hiruno-content-skills --target ~/.claude/skills
-```
-
-The repo is private, so npx will use your authenticated `git` credentials to clone it.
-
-### Option 2: per-project clone
+### Option 3: per-project clone
 
 For each brand or project, clone this repo into the project's `.agents/skills/` directory:
 
@@ -95,16 +106,16 @@ ln -s .agents/hiruno-v2/skills .agents/skills
 
 Then in the project, run the agent and start with the brand-content-context skill to create `.agents/brand-content-context.md` for that specific brand.
 
-### Option 3: global install (Claude Code, manual)
+### Option 4: global symlink (manual, non-plugin)
 
-If you want the skills available across all projects:
+If you want the raw skills available across all projects without the plugin namespace:
 
 ```bash
-git clone git@github.com:[your-org]/hiruno-v2.git ~/.claude/hiruno-v2
+git clone git@github.com:angelobaricante/hiruno-content-skills.git ~/.claude/hiruno-v2
 ln -s ~/.claude/hiruno-v2/skills/* ~/.claude/skills/
 ```
 
-The `.agents/brand-content-context.md` file still lives per-project so each brand gets its own context.
+Note this drops them into `~/.claude/skills/` flat — you lose the `hiruno-v2:` namespace. Prefer Option 1.
 
 ## Usage
 
