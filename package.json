@@ -1,0 +1,22 @@
+{
+  "name": "hiruno-content-skills",
+  "version": "0.1.0",
+  "description": "Hiruno V2 content skills installer for Claude Code",
+  "bin": {
+    "hiruno-content-skills": "bin/install.js"
+  },
+  "files": [
+    "bin",
+    "skills",
+    "references",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "README.md",
+    "VERSIONS.md"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

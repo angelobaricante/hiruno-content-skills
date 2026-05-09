@@ -65,9 +65,25 @@ Skills cross-reference each other. See each skill's "Related skills" section.
 
 ## Installation
 
-This is a private repo. Two install patterns to consider.
+This is a private repo. Three install patterns to consider.
 
-### Option 1: per-project clone (recommended)
+### Option 1: one-shot install via npx (recommended for Claude Code)
+
+Installs all skills into `~/.claude/skills/` with the brand-context auto-inject already wired in. Re-run any time to refresh after a `git pull` upstream.
+
+```bash
+npx github:angelobaricante/hiruno-content-skills
+```
+
+Custom target dir:
+
+```bash
+npx github:angelobaricante/hiruno-content-skills --target ~/.claude/skills
+```
+
+The repo is private, so npx will use your authenticated `git` credentials to clone it.
+
+### Option 2: per-project clone
 
 For each brand or project, clone this repo into the project's `.agents/skills/` directory:
 
@@ -79,7 +95,7 @@ ln -s .agents/hiruno-v2/skills .agents/skills
 
 Then in the project, run the agent and start with the brand-content-context skill to create `.agents/brand-content-context.md` for that specific brand.
 
-### Option 2: global install (Claude Code)
+### Option 3: global install (Claude Code, manual)
 
 If you want the skills available across all projects:
 
