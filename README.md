@@ -1,6 +1,6 @@
 # Hiruno Content Skills — Content Strategist Agent
 
-A private collection of AI agent skills built on Jun Yuh's 1×5×3 content system. Designed for Hiruno's solo-operator workflow and used across DTC clients (Cult of Sauna, Volt Dropper, future) and personal-brand work.
+A collection of AI agent skills built on Jun Yuh's 1×5×3 content system. Designed for Hiruno's solo-operator workflow and used across DTC clients (Cult of Sauna, Volt Dropper, future) and personal-brand work.
 
 Built for Claude Code, Cursor, Codex, and any agent that supports the [Agent Skills spec](https://agentskills.io).
 
@@ -65,7 +65,7 @@ Skills cross-reference each other. See each skill's "Related skills" section.
 
 ## Installation
 
-This is a private repo. Recommended path is the `npx skills` CLI — it works across Claude Code, Cursor, Codex, OpenCode, and 50+ other agents that follow the [Agent Skills spec](https://agentskills.io). Three fallbacks below.
+Recommended path is the `npx skills` CLI — it works across Claude Code, Cursor, Codex, OpenCode, and 50+ other agents that follow the [Agent Skills spec](https://agentskills.io). Three fallbacks below.
 
 ### Option 1: install via `npx skills` (recommended)
 
@@ -91,8 +91,6 @@ npx skills add angelobaricante/hiruno-content-skills -a claude-code
 Each `SKILL.md` already has the brand-context auto-inject line pre-baked — at runtime it shells out to `cat .agents/brand-content-context.md` from the current working directory, so per-project brand contexts work automatically.
 
 To update later: `npx skills update`. To remove: `npx skills remove`. See `npx skills --help` for the full command set.
-
-The repo is private, so the CLI uses your local `gh auth` credentials when fetching it.
 
 ### Option 2: install as a Claude Code plugin
 
