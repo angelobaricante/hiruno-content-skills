@@ -1,0 +1,82 @@
+{
+  "name": "hiruno-v2",
+  "displayName": "Hiruno V2 — Content Strategist Agent",
+  "version": "1.0.0",
+  "description": "Private content strategist agent built on Jun Yuh's 1×5×3 system. Twelve skills across foundation, strategy, messaging, hooks, formats, multiplication, and audit layers. Engineered for solo-operator content work across DTC clients and personal-brand work.",
+  "author": "Hiruno",
+  "license": "Private",
+  "skills": [
+    {
+      "name": "brand-content-context",
+      "path": "skills/brand-content-context",
+      "version": "1.0.0",
+      "category": "foundation"
+    },
+    {
+      "name": "pillars-and-topics",
+      "path": "skills/pillars-and-topics",
+      "version": "1.0.0",
+      "category": "strategy"
+    },
+    {
+      "name": "posting-grid",
+      "path": "skills/posting-grid",
+      "version": "1.0.0",
+      "category": "strategy"
+    },
+    {
+      "name": "symptom-first-messaging",
+      "path": "skills/symptom-first-messaging",
+      "version": "1.0.0",
+      "category": "messaging"
+    },
+    {
+      "name": "hook-generator",
+      "path": "skills/hook-generator",
+      "version": "1.0.0",
+      "category": "hooks"
+    },
+    {
+      "name": "hook-audit",
+      "path": "skills/hook-audit",
+      "version": "1.0.0",
+      "category": "hooks"
+    },
+    {
+      "name": "direct-to-camera-script",
+      "path": "skills/direct-to-camera-script",
+      "version": "1.0.0",
+      "category": "formats"
+    },
+    {
+      "name": "storytelling-carousel",
+      "path": "skills/storytelling-carousel",
+      "version": "1.0.0",
+      "category": "formats"
+    },
+    {
+      "name": "b-roll-text-post",
+      "path": "skills/b-roll-text-post",
+      "version": "1.0.0",
+      "category": "formats"
+    },
+    {
+      "name": "rehook-engineering",
+      "path": "skills/rehook-engineering",
+      "version": "1.0.0",
+      "category": "formats"
+    },
+    {
+      "name": "repurpose-multiplier",
+      "path": "skills/repurpose-multiplier",
+      "version": "1.0.0",
+      "category": "multiplication"
+    },
+    {
+      "name": "content-audit",
+      "path": "skills/content-audit",
+      "version": "1.0.0",
+      "category": "audit"
+    }
+  ]
+}

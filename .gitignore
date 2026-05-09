@@ -1,0 +1,22 @@
+# Brand contexts are per-project, never committed to the agent repo
+.agents/brand-content-context.md
+
+# Local Claude Code overrides
+.claude/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor junk
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temp
+tmp/
+*.tmp
+
+# Logs
+*.log
